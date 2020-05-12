@@ -1,0 +1,96 @@
+//https://auth0.com/blog/create-a-simple-and-stylish-node-express-app/ link reference used from custom template
+block varables
+
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Project
+  // Tell the browser to be responsive to screen width
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Font Awesome
+  link(rel='stylesheet' href='theme/plugins/fontawesome-free/css/all.min.css')
+  // Ionicons
+  link(rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+  // Tempusdominus Bbootstrap 4
+  link(rel='stylesheet' href='theme/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')
+  // iCheck
+  link(rel='stylesheet' href='theme/plugins/icheck-bootstrap/icheck-bootstrap.min.css')
+  // JQVMap
+  link(rel='stylesheet' href='theme/plugins/jqvmap/jqvmap.min.css')
+  // Theme style
+  link(rel='stylesheet' href='theme/dist/css/adminlte.min.css')
+  // overlayScrollbars
+  link(rel='stylesheet' href='theme/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')
+  // Daterange picker
+  link(rel='stylesheet' href='theme/plugins/daterangepicker/daterangepicker.css')
+  // summernote
+  link(rel='stylesheet' href='theme/plugins/summernote/summernote-bs4.css')
+  // Google Font: Source Sans Pro
+  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700' rel='stylesheet')
+  // jQuery
+  script(src='theme/plugins/jquery/jquery.min.js')
+  // jQuery UI 1.11.4
+  script(src='theme/plugins/jquery-ui/jquery-ui.min.js')
+  // Resolve conflict in jQuery UI tooltip with Bootstrap tooltip
+  script.
+    $.widget.bridge('uibutton', $.ui.button)
+  // Bootstrap 4
+  script(src='theme/plugins/bootstrap/js/bootstrap.bundle.min.js')
+  // ChartJS
+  script(src='theme/plugins/chart.js/Chart.min.js')
+  // Sparkline
+  script(src='theme/plugins/sparklines/sparkline.js')
+  // jQuery Knob Chart
+  script(src='theme/plugins/jquery-knob/jquery.knob.min.js')
+  // daterangepicker
+  script(src='theme/plugins/moment/moment.min.js')
+  script(src='theme/plugins/daterangepicker/daterangepicker.js')
+  // Tempusdominus Bootstrap 4
+  script(src='theme/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')
+  // Summernote
+  script(src='theme/plugins/summernote/summernote-bs4.min.js')
+  // overlayScrollbars
+  script(src='theme/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')
+  // AdminLTE App
+  script(src='theme/dist/js/adminlte.js')
+  // AdminLTE for demo purposes
+  script(src='theme/dist/js/demo.js')
+body.sidebar-collapse
+  .wrapper
+    // Navbar
+    nav.main-header.navbar.navbar-expand.navbar-white.navbar-light
+      // Left navbar links
+      ul.navbar-nav
+        li.nav-item.d-none.d-sm-inline-block
+          a.nav-link(href='index3.html') Home
+        li.nav-item.d-none.d-sm-inline-block
+          a.nav-link(href='#') Contact
+      // SEARCH FORM
+      form.form-inline.ml-3
+        .input-group.input-group-sm
+          input.form-control.form-control-navbar(type='search' placeholder='Search' aria-label='Search')
+          .input-group-append
+            button.btn.btn-navbar(type='submit')
+              i.fas.fa-search
+    // /.navbar
+    // Content Wrapper. Contains page content
+    .content-wrapper
+      // Content Header (Page header)
+      .content-header
+        .container-fluid
+        // /.container-fluid
+      // /.content-header
+      // Main content
+      section.content
+        .container-fluid
+          block layout-content
+        // /.container-fluid
+      // /.content
+    // /.content-wrapper
+    footer.main-footer
+      strong
+        | Copyright &copy; 2019 
+        | .
+      |     All rights reserved.
+  // ./wrapper
